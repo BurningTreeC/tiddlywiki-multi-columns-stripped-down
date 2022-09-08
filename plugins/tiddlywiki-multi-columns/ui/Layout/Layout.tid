@@ -56,4 +56,5 @@ tc-page-container tc-main-content tc-page-view-$(storyviewTitle)$ tc-language-$(
 		</$set>
 		<$transclude tiddler="$:/plugins/BTC/tiddlywiki-multi-columns-stripped-down/ui/Main/FlexTemplateContainer"/>
 	</main>
+	<$transclude tiddler="$:/plugins/BTC/tiddlywiki-multi-columns-stripped-down/ui/Panel/BottomRight"/>
 </$vars>

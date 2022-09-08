@@ -7,16 +7,6 @@ name: ~MultiColumn
 \define containerClasses()
 tc-page-container tc-main-content tc-page-view-$(storyviewTitle)$ tc-language-$(languageTitle)$
 \end
-\define sidebar-actions()
-<$action-setfield $tiddler="$:/state/panel/visibility" text="yes"/>
-<$action-deletetiddler $filter="[[$:/state/panel/is-hiding]] [[$:/state/user-panel/is-hiding]]"/>
-<$action-sendmessage $message="tm-focus-selector-deferred" $param=".btc-panel-container .btc-panel-content-header .tc-sidebar-search input" delay={{{ [{$:/config/AnimationDuration}divide[2]round[]] }}}/>
-\end
-\define user-sidebar-actions()
-<$action-setfield $tiddler="$:/state/user-panel/visibility" text="yes"/>
-<$action-deletetiddler $filter="[[$:/state/panel/is-hiding]] [[$:/state/user-panel/is-hiding]]"/>
-<$action-sendmessage $message="tm-focus-selector-deferred" $param=".btc-user-panel-container input" delay={{{ [{$:/config/AnimationDuration}divide[2]round[]] }}}/>
-\end
 \define active-column-dblclick-actions()
 <$let flexGrowField={{{ [[flex-grow-]addsuffix<currentColumn>] }}} columnModifier={{{ [[$:/config/story-river/column-modifier]get[text]] }}} flexGrow={{{ [[$:/columns]get<flexGrowField>] ~1 }}}>
 <$list filter="[<modifier>match<columnModifier>]" variable="ignore" emptyMessage="""
@@ -47,20 +37,6 @@ tc-page-container tc-main-content tc-page-view-$(storyviewTitle)$ tc-language-$(
 <$action-deletetiddler $tiddler="$:/state/search-panel/search"/>
 <<focus-draft-tiddler-or-container>>
 \end
-\define sidebar-close-actions()
-<$list filter="[{$:/state/user-panel/visibility}match[yes]]" variable="ignore" emptyMessage="""<$action-deletetiddler $filter="[[$:/state/panel/is-hiding]] [[$:/state/user-panel/is-hiding]]"/>""">
-<$action-setfield $tiddler="$:/state/panel/is-hiding" text="yes"/>
-</$list>
-<$action-setfield $tiddler="$:/state/panel/visibility" text="no"/>
-<<focus-draft-tiddler-or-container>>
-\end
-\define user-sidebar-close-actions()
-<$list filter="[{$:/state/panel/visibility}match[yes]]" variable="ignore" emptyMessage="""<$action-deletetiddler $filter="[[$:/state/panel/is-hiding]] [[$:/state/user-panel/is-hiding]]"/>""">
-<$action-setfield $tiddler="$:/state/user-panel/is-hiding" text="yes"/>
-</$list>
-<$action-setfield $tiddler="$:/state/user-panel/visibility" text="no"/>
-<<focus-draft-tiddler-or-container>>
-\end
 \import [[$:/core/ui/PageMacros]] [all[shadows+tiddlers]tag[$:/tags/Macro]!is[draft]]
 <$vars
 	tv-config-toolbar-icons={{$:/config/Toolbar/Icons}}
@@ -71,9 +47,6 @@ tc-page-container tc-main-content tc-page-view-$(storyviewTitle)$ tc-language-$(
 	storyviewTitle={{$:/view}}
 	languageTitle={{{ [{$:/language}get[name]] }}}>
 	<main class=<<containerClasses>>>
-		<$list filter="[all[tiddlers+shadows]tag[$:/tags/MultiColumn/Overlay]]" variable="listItem">
-			<$transclude tiddler=<<listItem>>/>
-		</$list>
 		<$set name="currentColumn" value={{{ [[$:/columns]get[active-column]] ~1 }}}>
 			<$navigator story={{{ [[$:/StoryList-]addsuffix<currentColumn>!match[$:/StoryList-1]] ~[[$:/StoryList]] }}} history={{{ [[$:/HistoryList-]addsuffix<currentColumn>!match[$:/HistoryList-1]] ~[[$:/HistoryList]] }}} openLinkFromInsideRiver={{$:/config/Navigation/openLinkFromInsideRiver}} openLinkFromOutsideRiver={{$:/config/Navigation/openLinkFromOutsideRiver}} relinkOnRename={{$:/config/RelinkOnRename}}>
 				<$list filter="[all[tiddlers+shadows]tag[$:/tags/PageTemplate]!is[draft]] -[[$:/core/ui/PageTemplate/story]] -[[$:/core/ui/PageTemplate/sidebar]] -[[$:/core/ui/PageTemplate/drafts]] -[[$:/core/ui/PageTemplate/alerts]] -[[$:/core/ui/PageTemplate/pluginreloadwarning]] -[[$:/core/ui/PageTemplate/toprightbar]] -[[$:/core/ui/PageTemplate/topleftbar]] -[[$:/plugins/tiddlywiki/menubar/menu]]" variable="listItem">
@@ -83,7 +56,4 @@ tc-page-container tc-main-content tc-page-view-$(storyviewTitle)$ tc-language-$(
 		</$set>
 		<$transclude tiddler="$:/plugins/BTC/tiddlywiki-multi-columns/ui/Main/FlexTemplateContainer"/>
 	</main>
-	<$list filter="[all[tiddlers+shadows]tag[$:/tags/MultiColumn/Panel]]" variable="listItem">
-		<$transclude tiddler=<<listItem>>/>
-	</$list>
 </$vars>

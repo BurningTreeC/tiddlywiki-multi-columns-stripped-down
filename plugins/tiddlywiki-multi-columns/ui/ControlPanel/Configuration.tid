@@ -4,16 +4,6 @@ caption: MultiColumn
 
 <div>
 
-!!! user-panel header title
-<$link to="$:/UserPanelTitle"/><br>
-<$edit-text tag="input" tiddler="$:/UserPanelTitle" default="" placeholder="user-panel title"/><br>
-<hr>
-
-!!! user-panel header subtitle
-<$link to="$:/UserPanelSubtitle"/><br>
-<$edit-text tag="input" tiddler="$:/UserPanelSubtitle" default="" placeholder="user-panel subtitle"/><br>
-<hr>
-
 !!! dragging enabled
 <$link to="$:/config/story-river/dragging-enable"/><br>
 <$select tiddler="$:/config/story-river/dragging-enable" default="yes">
@@ -58,38 +48,6 @@ caption: MultiColumn
 !!! ''show the bottom right panel''
 <$link to="$:/config/story-river/bottom-right-panel"/><br>
 <$checkbox tiddler="$:/config/story-river/bottom-right-panel" field="text" checked="yes" unchecked="no" default="yes"> show or hide</$checkbox>
-<hr>
-
-!!! show the ''side panel'' on the ''right'' or the ''left''
-<$link to="$:/config/panel/position"/><br>
-<$select tiddler="$:/config/panel/position" default="right">
-<option value="right">right</option>
-<option value="left">left</option>
-</$select>
-<hr>
-
-!!! obscure the ''story river'' when the ''panel'' is shown
-<$link to="$:/config/panel/river-obscured"/><br>
-<$select tiddler="$:/config/panel/river-obscured" default="yes">
-<option value="yes">yes</option>
-<option value="no">no</option>
-</$select>
-<hr>
-
-!!! make the ''story-rivers adapt'' to the ''sidebar''
-<$link to="$:/config/story-river/adapt-to-panel"/><br>
-<$select tiddler="$:/config/story-river/adapt-to-panel" default="no">
-<option value="yes">yes</option>
-<option value="no">no</option>
-</$select>
-<hr>
-
-!!! show the ''numbers'' in the panel's column-buttons
-<$link to="$:/config/panel/show-numbers"/><br>
-<$select tiddler="$:/config/panel/show-numbers" default="no">
-<option value="yes">yes</option>
-<option value="no">no</option>
-</$select>
 <hr>
 
 !!! make the ''move-to'' column the active column
@@ -158,15 +116,6 @@ caption: MultiColumn
 !!! show the ''search field'' in the ''top hamburger panel''
 <$link to="$:/config/top-hamburger-toolbar/show-search"/><br>
 <$select tiddler="$:/config/top-hamburger-toolbar/show-search" default="no">
-<option value="yes">yes</option>
-<option value="no">no</option>
-</$select>
-<hr>
-
-
-!!! hide the system-sidebar / panel and its button (Attention: you should know what you're doing)
-<$link to="$:/config/panel/disable"/><br>
-<$select tiddler="$:/config/panel/disable" default="no">
 <option value="yes">yes</option>
 <option value="no">no</option>
 </$select>

@@ -1,8 +1,10 @@
-title: $:/plugins/BTC/tiddlywiki-multi-columns/readme
+title: $:/plugins/BTC/tiddlywiki-multi-columns-stripped-down/readme
 
 !!! tiddlywiki-multi-columns-stripped-down
 
 This ''plugin'' provides a //multi-column// layout for ~TiddlyWiki5
+
+It requires version 5.2.3 or newer of ~TiddlyWiki5
 
 After installing, you can enable it by pressing <kbd>Ctrl-Shift-L</kbd> and switching to ~MultiColumn (sd) or by changing the Layout through the $:/ControlPanel > Appearance > Layout > ~MultiColumn (sd)
 

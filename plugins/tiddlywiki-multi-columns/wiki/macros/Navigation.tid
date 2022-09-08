@@ -20,7 +20,7 @@ tags: $:/tags/Macro
 \end
 
 \define btc-multi-column-keyboard-navigation(actions)
-<$list filter="[{$:/layout}match[$:/plugins/BTC/tiddlywiki-multi-columns/ui/Layout]]" variable="ignore">
+<$list filter="[{$:/layout}match[$:/plugins/BTC/tiddlywiki-multi-columns-stripped-down/ui/Layout]]" variable="ignore">
 	<$list filter="[all[tiddlers]prefix[$:/state/story-river/full-screen/]] +[limit[1]]" variable="ignore" emptyMessage=<<btc-multi-column-keyboard-navigation-inner>>></$list>
 </$list>
 \end
@@ -34,7 +34,7 @@ tags: $:/tags/Macro
 \end
 
 \define btc-multi-column-navigator(actions,fullscreen-block:"yes")
-<$list filter="[{$:/layout}match[$:/plugins/BTC/tiddlywiki-multi-columns/ui/Layout]]" variable="ignore" emptyMessage=<<not-multi-column-layout-message>>>
+<$list filter="[{$:/layout}match[$:/plugins/BTC/tiddlywiki-multi-columns-stripped-down/ui/Layout]]" variable="ignore" emptyMessage=<<not-multi-column-layout-message>>>
 	<$list filter="[<__fullscreen-block__>match[yes]]" variable="ignore">
 		<$list filter="[all[tiddlers]prefix[$:/state/story-river/full-screen/]] +[limit[1]]" variable="ignore" emptyMessage=<<btc-multi-column-navigator-inner>>></$list>
 	</$list>
@@ -51,7 +51,7 @@ tags: $:/tags/Macro
 \end
 
 \define btc-simple-multi-column-navigator(actions)
-<$list filter="[{$:/layout}match[$:/plugins/BTC/tiddlywiki-multi-columns/ui/Layout]]" variable="ignore" emptyMessage=<<not-multi-column-layout-message>>>
+<$list filter="[{$:/layout}match[$:/plugins/BTC/tiddlywiki-multi-columns-stripped-down/ui/Layout]]" variable="ignore" emptyMessage=<<not-multi-column-layout-message>>>
 	<$list filter="[all[tiddlers]prefix[$:/state/story-river/full-screen/]] +[limit[1]]" variable="ignore" emptyMessage=<<btc-simple-multi-column-navigator-inner>>></$list>
 </$list>
 \end

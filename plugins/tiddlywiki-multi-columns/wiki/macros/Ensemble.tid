@@ -54,7 +54,7 @@ Do you want to overwrite?
 \end
 
 \define btc-empty-ensemble-title-message()
-<$action-sendmessage $message="tm-notify" $param="$:/plugins/BTC/tiddlywiki-multi-columns/ui/SideBarTabs/Story/EmptyNotification"/>
+<$action-sendmessage $message="tm-notify" $param="$:/plugins/BTC/tiddlywiki-multi-columns-stripped-down/ui/SideBarTabs/Story/EmptyNotification"/>
 \end
 
 \define btc-overwrite-ensemble-message()

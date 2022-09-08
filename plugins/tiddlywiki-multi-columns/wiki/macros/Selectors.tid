@@ -1,4 +1,4 @@
-title: $:/plugins/BTC/tiddlywiki-multi-columns/macros/Selectors
+title: $:/plugins/BTC/tiddlywiki-multi-columns-stripped-down/macros/Selectors
 tags: $:/tags/Macro
 
 \define btc-not-is-draft-focus-selector()

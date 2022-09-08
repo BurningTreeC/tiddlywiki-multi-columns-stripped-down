@@ -1,4 +1,4 @@
-title: $:/plugins/BTC/tiddlywiki-multi-columns/macros/CSS
+title: $:/plugins/BTC/tiddlywiki-multi-columns-stripped-down/macros/CSS
 tags: $:/tags/Macro
 
 \define colour(name)

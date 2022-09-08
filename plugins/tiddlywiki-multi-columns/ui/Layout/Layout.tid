@@ -1,4 +1,4 @@
-title: $:/plugins/BTC/tiddlywiki-multi-columns/ui/Layout
+title: $:/plugins/BTC/tiddlywiki-multi-columns-stripped-down/ui/Layout
 tags: $:/tags/Layout
 description: A multi-column Layout
 name: ~MultiColumn
@@ -11,10 +11,10 @@ tc-page-container tc-main-content tc-page-view-$(storyviewTitle)$ tc-language-$(
 <$let flexGrowField={{{ [[flex-grow-]addsuffix<currentColumn>] }}} columnModifier={{{ [[$:/config/story-river/column-modifier]get[text]] }}} flexGrow={{{ [[$:/columns]get<flexGrowField>] ~1 }}}>
 <$list filter="[<modifier>match<columnModifier>]" variable="ignore" emptyMessage="""
 <$action-setfield $tiddler="$:/columns" $field=<<flexGrowField>> $value={{{ [<flexGrow>add[1]] }}}/>
-<$action-sendmessage $message="tm-notify" $param="$:/plugins/BTC/tiddlywiki-multi-columns/ui/FlexGrowNotification" flexGrow={{{ [<flexGrow>add[1]] }}} flexGrowField=<<flexGrowField>> column=<<currentColumn>>/>
+<$action-sendmessage $message="tm-notify" $param="$:/plugins/BTC/tiddlywiki-multi-columns-stripped-down/ui/FlexGrowNotification" flexGrow={{{ [<flexGrow>add[1]] }}} flexGrowField=<<flexGrowField>> column=<<currentColumn>>/>
 """>
 <$action-setfield $tiddler="$:/columns" $field=<<flexGrowField>> $value={{{ [<flexGrow>subtract[1]!match[0]] ~1 }}}/>
-<$action-sendmessage $message="tm-notify" $param="$:/plugins/BTC/tiddlywiki-multi-columns/ui/FlexGrowNotification" flexGrow={{{ [<flexGrow>subtract[1]!match[0]] ~1 }}} flexGrowField=<<flexGrowField>> column=<<currentColumn>>/>
+<$action-sendmessage $message="tm-notify" $param="$:/plugins/BTC/tiddlywiki-multi-columns-stripped-down/ui/FlexGrowNotification" flexGrow={{{ [<flexGrow>subtract[1]!match[0]] ~1 }}} flexGrowField=<<flexGrowField>> column=<<currentColumn>>/>
 </$list>
 </$let>
 \end
@@ -54,6 +54,6 @@ tc-page-container tc-main-content tc-page-view-$(storyviewTitle)$ tc-language-$(
 				</$list>
 			</$navigator>
 		</$set>
-		<$transclude tiddler="$:/plugins/BTC/tiddlywiki-multi-columns/ui/Main/FlexTemplateContainer"/>
+		<$transclude tiddler="$:/plugins/BTC/tiddlywiki-multi-columns-stripped-down/ui/Main/FlexTemplateContainer"/>
 	</main>
 </$vars>

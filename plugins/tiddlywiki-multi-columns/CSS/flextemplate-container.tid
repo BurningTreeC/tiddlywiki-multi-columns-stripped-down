@@ -1,4 +1,4 @@
-title: $:/plugins/BTC/tiddlywiki-multi-columns/CSS/flextemplate-container
+title: $:/plugins/BTC/tiddlywiki-multi-columns-stripped-down/CSS/flextemplate-container
 tags: $:/tags/Stylesheet
 
 \define column-layout()
@@ -40,7 +40,7 @@ tags: $:/tags/Stylesheet
 
 \end
 
-<$list filter="[{$:/layout}match[$:/plugins/BTC/tiddlywiki-multi-columns/ui/Layout]]" variable="ignore">
+<$list filter="[{$:/layout}match[$:/plugins/BTC/tiddlywiki-multi-columns-stripped-down/ui/Layout]]" variable="ignore">
 
 .btc-flextemplate-container {
 	display: flex;

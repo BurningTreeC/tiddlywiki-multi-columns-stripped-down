@@ -1,8 +1,8 @@
-title: $:/plugins/BTC/tiddlywiki-multi-columns/ui/KeyboardShortcuts/new-column
+title: $:/plugins/BTC/tiddlywiki-multi-columns-stripped-down/ui/KeyboardShortcuts/new-column
 tags: $:/tags/KeyboardShortcut
 key: ((new-column))
 
-<$list filter="[{$:/layout}match[$:/plugins/BTC/tiddlywiki-multi-columns/ui/Layout]]" variable="ignore">
+<$list filter="[{$:/layout}match[$:/plugins/BTC/tiddlywiki-multi-columns-stripped-down/ui/Layout]]" variable="ignore">
 <$list filter="[all[tiddlers]prefix[$:/state/story-river/full-screen/]] +[limit[1]]" variable="ignore" emptyMessage="""
 <$let columnCount={{{ [list[$:/columns]count[]] }}} newColumn={{{ [<columnCount>add[1]] }}}>
 <$action-listops $tiddler="$:/columns" $subfilter="[<newColumn>]"/>

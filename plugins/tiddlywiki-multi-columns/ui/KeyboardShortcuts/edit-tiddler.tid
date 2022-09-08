@@ -1,8 +1,8 @@
-title: $:/plugins/BTC/tiddlywiki-multi-columns/ui/KeyboardShortcuts/edit-tiddler
+title: $:/plugins/BTC/tiddlywiki-multi-columns-stripped-down/ui/KeyboardShortcuts/edit-tiddler
 tags: $:/tags/KeyboardShortcut
 key: ((edit-tiddler))
 
-\import $:/plugins/BTC/tiddlywiki-multi-columns/macros/Navigation
+\import $:/plugins/BTC/tiddlywiki-multi-columns-stripped-down/macros/Navigation
 
 \define not-multi-column-layout-message()
 <$set name="currentTiddler" value={{{ [[$:/HistoryList]get[current-tiddler]] }}}>

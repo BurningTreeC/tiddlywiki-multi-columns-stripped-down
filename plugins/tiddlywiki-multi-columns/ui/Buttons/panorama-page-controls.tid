@@ -1,4 +1,4 @@
-title: $:/plugins/BTC/tiddlywiki-multi-columns/ui/Buttons/panorama-page-controls
+title: $:/plugins/BTC/tiddlywiki-multi-columns-stripped-down/ui/Buttons/panorama-page-controls
 tags: $:/tags/PageControls
 description: horizontal or vertical view
 caption: toggle panorama
@@ -15,7 +15,7 @@ panorama - [$(vertHorizShortcut)$]
 <$list filter="[{$:/config/story-river/scroll-snap-x}match[yes]]" emptyMessage="""
 	<$action-setfield $tiddler="$:/config/story-river/scroll-snap-x" text="yes"/>
 	<$list filter="[<tv-config-toolbar-icons>match[yes]]">
-		{{$:/plugins/BTC/tiddlywiki-multi-columns/icons/panorama-vertical-small}}
+		{{$:/plugins/BTC/tiddlywiki-multi-columns-stripped-down/icons/panorama-vertical-small}}
 	</$list>
 	<$list filter="[<tv-config-toolbar-text>match[yes]]">
 		<span class="tc-btn-text" style="margin-left: 0px;">
@@ -25,7 +25,7 @@ panorama - [$(vertHorizShortcut)$]
 """>
 	<$action-setfield $tiddler="$:/config/story-river/scroll-snap-x" text="no"/>
 	<$list filter="[<tv-config-toolbar-icons>match[yes]]">
-		{{$:/plugins/BTC/tiddlywiki-multi-columns/icons/panorama-horizontal-small}}
+		{{$:/plugins/BTC/tiddlywiki-multi-columns-stripped-down/icons/panorama-horizontal-small}}
 	</$list>
 	<$list filter="[<tv-config-toolbar-text>match[yes]]">
 		<span class="tc-btn-text" style="margin-left: 4px;">

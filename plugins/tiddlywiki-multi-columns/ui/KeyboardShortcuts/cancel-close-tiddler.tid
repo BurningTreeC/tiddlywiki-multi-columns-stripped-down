@@ -1,8 +1,8 @@
-title: $:/plugins/BTC/tiddlywiki-multi-columns/ui/KeyboardShortcuts/cancel-close-tiddler
+title: $:/plugins/BTC/tiddlywiki-multi-columns-stripped-down/ui/KeyboardShortcuts/cancel-close-tiddler
 tags: $:/tags/KeyboardShortcut
 key: ((cancel-close-tiddler))
 
-\import $:/plugins/BTC/tiddlywiki-multi-columns/macros/Selectors $:/plugins/BTC/tiddlywiki-multi-columns/macros/Navigation
+\import $:/plugins/BTC/tiddlywiki-multi-columns-stripped-down/macros/Selectors $:/plugins/BTC/tiddlywiki-multi-columns-stripped-down/macros/Navigation
 
 \define tiddler-is-draft-actions-draft-of-not-is-missing()
 <$list filter="[list[$:/columns]!match{$:/columns!!active-column}]" variable="column">

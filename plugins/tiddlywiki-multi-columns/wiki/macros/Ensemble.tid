@@ -1,4 +1,4 @@
-title: $:/plugins/BTC/tiddlywiki-multi-columns/macros/Ensemble
+title: $:/plugins/BTC/tiddlywiki-multi-columns-stripped-down/macros/Ensemble
 tags: $:/tags/Macro
 
 \define btc-get-overwrite-message()

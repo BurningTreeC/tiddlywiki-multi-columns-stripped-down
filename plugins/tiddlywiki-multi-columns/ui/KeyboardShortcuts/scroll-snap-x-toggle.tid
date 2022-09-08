@@ -1,10 +1,10 @@
-title: $:/plugins/BTC/tiddlywiki-multi-columns/ui/KeyboardShortcuts/scroll-snap-x-toggle
+title: $:/plugins/BTC/tiddlywiki-multi-columns-stripped-down/ui/KeyboardShortcuts/scroll-snap-x-toggle
 tags: $:/tags/KeyboardShortcut
 key: ((scroll-snap-x-toggle))
 
 \define scroll-snap-x-not-yes() <$action-setfield $tiddler="$:/config/story-river/scroll-snap-x" text="yes"/>
 
-<$list filter="[{$:/layout}match[$:/plugins/BTC/tiddlywiki-multi-columns/ui/Layout]]" variable="ignore">
+<$list filter="[{$:/layout}match[$:/plugins/BTC/tiddlywiki-multi-columns-stripped-down/ui/Layout]]" variable="ignore">
 <$list filter="[all[tiddlers]prefix[$:/state/story-river/full-screen/]] +[limit[1]]" variable="ignore" emptyMessage="""
 <$list filter="[{$:/config/story-river/scroll-snap-x}match[yes]]" emptyMessage=<<scroll-snap-x-not-yes>>>
 	<$action-setfield $tiddler="$:/config/story-river/scroll-snap-x" text="no"/>

@@ -1,4 +1,4 @@
-title: $:/plugins/BTC/tiddlywiki-multi-columns/ui/Buttons/search-panel
+title: $:/plugins/BTC/tiddlywiki-multi-columns-stripped-down/ui/Buttons/search-panel
 tags: $:/tags/BottomRightPanel
 
 \define get-search-panel-tooltip()
@@ -13,6 +13,6 @@ search panel - [$(searchPanelShortcut)$]
 <$action-popup $state="$:/state/search-panel" $coords="(0,0,0,0)"/>
 <$action-sendmessage $message="tm-focus-selector-deferred" $param=".btc-search-panel-input" delay={{{ [{$:/config/AnimationDuration}divide[2]round[]] }}}/>
 </$list>
-{{$:/plugins/BTC/tiddlywiki-multi-columns/icons/search-panel}}
+{{$:/plugins/BTC/tiddlywiki-multi-columns-stripped-down/icons/search-panel}}
 </$button>
 </$set>

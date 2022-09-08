@@ -1,4 +1,4 @@
-title: $:/plugins/BTC/tiddlywiki-multi-columns/ui/Buttons/dragging-toggle
+title: $:/plugins/BTC/tiddlywiki-multi-columns-stripped-down/ui/Buttons/dragging-toggle
 tags: $:/tags/PageControls $:/tags/BottomRightPanel
 description: toggle the dragging functionality
 caption: dragging toggle
@@ -16,7 +16,7 @@ dragging $onoff$ - [$(draggingShortcut)$]
 <$button class=<<get-button-class "tc-selected">> tooltip=<<get-dragging-tooltip "off">>>
 <$action-setfield $tiddler=<<state>> text="no"/>
 <$list filter="[<tv-config-toolbar-icons>prefix[yes]]">
-{{$:/plugins/BTC/tiddlywiki-multi-columns/icons/dragging-toggle}}
+{{$:/plugins/BTC/tiddlywiki-multi-columns-stripped-down/icons/dragging-toggle}}
 </$list>
 <$list filter="[<tv-config-toolbar-text>prefix[yes]]">
 <span class="tc-btn-text"><$text text="dragging"/></span>
@@ -27,7 +27,7 @@ dragging $onoff$ - [$(draggingShortcut)$]
 <$button class=<<get-button-class>> tooltip=<<get-dragging-tooltip "on">>>
 <$action-deletetiddler $tiddler=<<state>>/>
 <$list filter="[<tv-config-toolbar-icons>prefix[yes]]">
-{{$:/plugins/BTC/tiddlywiki-multi-columns/icons/dragging-toggle}}
+{{$:/plugins/BTC/tiddlywiki-multi-columns-stripped-down/icons/dragging-toggle}}
 </$list>
 <$list filter="[<tv-config-toolbar-text>prefix[yes]]">
 <span class="tc-btn-text"><$text text="dragging"/></span>

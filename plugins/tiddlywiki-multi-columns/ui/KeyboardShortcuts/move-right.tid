@@ -1,8 +1,8 @@
-title: $:/plugins/BTC/tiddlywiki-multi-columns/ui/KeyboardShortcuts/move-right
+title: $:/plugins/BTC/tiddlywiki-multi-columns-stripped-down/ui/KeyboardShortcuts/move-right
 tags: $:/tags/KeyboardShortcut
 key: ((move-right))
 
-\import $:/plugins/BTC/tiddlywiki-multi-columns/macros/Selectors $:/plugins/BTC/tiddlywiki-multi-columns/macros/Navigation
+\import $:/plugins/BTC/tiddlywiki-multi-columns-stripped-down/macros/Selectors $:/plugins/BTC/tiddlywiki-multi-columns-stripped-down/macros/Navigation
 
 \define current-tiddler-is-empty-message()
 <$action-listops $tiddler=<<nextStoryList>> $subfilter="+[insertbefore<focusedTiddler>,<firstNextStoryTiddler>]"/>

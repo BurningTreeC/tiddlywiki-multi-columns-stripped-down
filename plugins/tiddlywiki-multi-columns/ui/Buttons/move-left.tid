@@ -1,4 +1,4 @@
-title: $:/plugins/BTC/tiddlywiki-multi-columns/ui/Buttons/move-left
+title: $:/plugins/BTC/tiddlywiki-multi-columns-stripped-down/ui/Buttons/move-left
 tags: $:/tags/ViewToolbar $:/tags/EditToolbar
 icon: $:/core/icons/left-arrow
 description: move the tiddler to the previous column at the left

@@ -1,2 +1,2 @@
 title: $:/tags/MultiColumn/Main
-list: $:/plugins/BTC/tiddlywiki-multi-columns/ui/Main/TopHeader $:/plugins/BTC/tiddlywiki-multi-columns/ui/Main/MainArea $:/plugins/BTC/tiddlywiki-multi-columns/ui/Main/BottomHeader
+list: $:/plugins/BTC/tiddlywiki-multi-columns-stripped-down/ui/Main/TopHeader $:/plugins/BTC/tiddlywiki-multi-columns-stripped-down/ui/Main/MainArea $:/plugins/BTC/tiddlywiki-multi-columns-stripped-down/ui/Main/BottomHeader

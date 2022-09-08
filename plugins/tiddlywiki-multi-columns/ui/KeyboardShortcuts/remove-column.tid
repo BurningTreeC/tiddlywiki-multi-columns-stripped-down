@@ -1,8 +1,8 @@
-title: $:/plugins/BTC/tiddlywiki-multi-columns/ui/KeyboardShortcuts/remove-column
+title: $:/plugins/BTC/tiddlywiki-multi-columns-stripped-down/ui/KeyboardShortcuts/remove-column
 tags: $:/tags/KeyboardShortcut
 key: ((remove-column))
 
-<$list filter="[{$:/layout}match[$:/plugins/BTC/tiddlywiki-multi-columns/ui/Layout]]" variable="ignore">
+<$list filter="[{$:/layout}match[$:/plugins/BTC/tiddlywiki-multi-columns-stripped-down/ui/Layout]]" variable="ignore">
 <$list filter="[all[tiddlers]prefix[$:/state/story-river/full-screen/]] +[limit[1]]" variable="ignore" emptyMessage="""
 <$set name="columnCount" value={{{ [list[$:/columns]count[]] }}}>
 <$list filter="[[$:/columns]get[active-column]match<columnCount>]">

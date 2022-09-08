@@ -1,4 +1,4 @@
-title: $:/plugins/BTC/tiddlywiki-multi-columns/CSS/scroll-margins
+title: $:/plugins/BTC/tiddlywiki-multi-columns-stripped-down/CSS/scroll-margins
 tags: $:/tags/Stylesheet
 
 \define scroll-margin-top-story-river-padding()
@@ -21,7 +21,7 @@ tags: $:/tags/Stylesheet
 
 \end
 
-<$list filter="[{$:/layout}match[$:/plugins/BTC/tiddlywiki-multi-columns/ui/Layout]]" variable="ignore">
+<$list filter="[{$:/layout}match[$:/plugins/BTC/tiddlywiki-multi-columns-stripped-down/ui/Layout]]" variable="ignore">
 
 <$list filter="[list[$:/columns]]" variable="column">
 

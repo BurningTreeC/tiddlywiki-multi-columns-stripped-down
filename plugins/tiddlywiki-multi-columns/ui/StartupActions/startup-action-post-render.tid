@@ -1,7 +1,7 @@
-title: $:/plugins/BTC/tiddlywiki-multi-columns/ui/StartupActions/PostRender
+title: $:/plugins/BTC/tiddlywiki-multi-columns-stripped-down/ui/StartupActions/PostRender
 tags: $:/tags/StartupAction/PostRender
 
-\import $:/plugins/BTC/tiddlywiki-multi-columns/macros/Selectors
+\import $:/plugins/BTC/tiddlywiki-multi-columns-stripped-down/macros/Selectors
 
 <$list filter="[{$:/columns!!active-column}!is[blank]!match[1]]" variable="ignore">
 <$let currentColumn={{{ [[$:/columns]get[active-column]] }}} storyList={{{ [[$:/StoryList-]addsuffix<currentColumn>] }}} historyList={{{ [[$:/HistoryList-]addsuffix<currentColumn>] }}}>

@@ -1,4 +1,4 @@
-title: $:/plugins/BTC/tiddlywiki-multi-columns/CSS/dragndrop
+title: $:/plugins/BTC/tiddlywiki-multi-columns-stripped-down/CSS/dragndrop
 tags: $:/tags/Stylesheet
 
 \define tiddler-frame-transitions()
@@ -79,7 +79,7 @@ tags: $:/tags/Stylesheet
 
 \end
 
-<$list filter="[{$:/layout}match[$:/plugins/BTC/tiddlywiki-multi-columns/ui/Layout]]" variable="ignore">
+<$list filter="[{$:/layout}match[$:/plugins/BTC/tiddlywiki-multi-columns-stripped-down/ui/Layout]]" variable="ignore">
 
 .btc-droppable-top-half {
 	position: absolute;

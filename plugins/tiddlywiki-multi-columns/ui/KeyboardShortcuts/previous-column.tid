@@ -1,13 +1,13 @@
-title: $:/plugins/BTC/tiddlywiki-multi-columns/ui/KeyboardShortcuts/previous-column
+title: $:/plugins/BTC/tiddlywiki-multi-columns-stripped-down/ui/KeyboardShortcuts/previous-column
 tags: $:/tags/KeyboardShortcut
 key: ((previous-column))
 
-\import $:/plugins/BTC/tiddlywiki-multi-columns/macros/Selectors
+\import $:/plugins/BTC/tiddlywiki-multi-columns-stripped-down/macros/Selectors
 \define scroll-to-river()
 <$action-sendmessage $message="tm-scroll" selector={{{ [[.btc-river-]addsuffix<currentColumn>] }}}/>
 \end
 
-<$list filter="[{$:/layout}match[$:/plugins/BTC/tiddlywiki-multi-columns/ui/Layout]]" variable="ignore">
+<$list filter="[{$:/layout}match[$:/plugins/BTC/tiddlywiki-multi-columns-stripped-down/ui/Layout]]" variable="ignore">
 	<$list filter="[all[tiddlers]prefix[$:/state/story-river/full-screen/]] +[limit[1]]" variable="ignore" emptyMessage="""
 		<$set name="currentColumn" value={{{ [[$:/columns]get[active-column]] ~1 }}}>
 			<$set name="columnCount" value={{{ [list[$:/columns]count[]] ~1 }}}>

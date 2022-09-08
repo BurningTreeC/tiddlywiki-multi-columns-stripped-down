@@ -1,7 +1,7 @@
-title: $:/plugins/BTC/tiddlywiki-multi-columns/CSS/misc
+title: $:/plugins/BTC/tiddlywiki-multi-columns-stripped-down/CSS/misc
 tags: $:/tags/Stylesheet
 
-<$list filter="[{$:/layout}match[$:/plugins/BTC/tiddlywiki-multi-columns/ui/Layout]]" variable="ignore">
+<$list filter="[{$:/layout}match[$:/plugins/BTC/tiddlywiki-multi-columns-stripped-down/ui/Layout]]" variable="ignore">
 
 .btc-column-active-button {
 	display: flex;
@@ -140,7 +140,7 @@ tags: $:/tags/Stylesheet
 
 </$list>
 
-<$list filter="[{$:/layout}!match[$:/plugins/BTC/tiddlywiki-multi-columns/ui/Layout]]" variable="ignore">
+<$list filter="[{$:/layout}!match[$:/plugins/BTC/tiddlywiki-multi-columns-stripped-down/ui/Layout]]" variable="ignore">
 
 .btc-panorama-button, .btc-remove-column-button, .btc-add-column-button, .btc-dragging-button {
 	display: none;

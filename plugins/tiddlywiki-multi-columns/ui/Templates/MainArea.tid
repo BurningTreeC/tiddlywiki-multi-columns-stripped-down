@@ -1,7 +1,7 @@
-title: $:/plugins/BTC/tiddlywiki-multi-columns/ui/Main/MainArea
+title: $:/plugins/BTC/tiddlywiki-multi-columns-stripped-down/ui/Main/MainArea
 tags: $:/tags/MultiColumn/Main
 
 \whitespace trim
 <main class="main btc-column-container">
-	<$list filter="[list[$:/columns]] ~1" variable="currentColumn" template="$:/plugins/BTC/tiddlywiki-multi-columns/ui/Templates/RiverTemplate"/>
+	<$list filter="[list[$:/columns]] ~1" variable="currentColumn" template="$:/plugins/BTC/tiddlywiki-multi-columns-stripped-down/ui/Templates/RiverTemplate"/>
 </main>

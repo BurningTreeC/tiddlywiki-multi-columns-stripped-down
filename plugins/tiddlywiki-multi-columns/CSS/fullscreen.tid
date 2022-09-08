@@ -1,4 +1,4 @@
-title: $:/plugins/BTC/tiddlywiki-multi-columns/CSS/fullscreen
+title: $:/plugins/BTC/tiddlywiki-multi-columns-stripped-down/CSS/fullscreen
 tags: $:/tags/Stylesheet
 
 \define view-tiddler-full-screen()
@@ -50,7 +50,7 @@ tags: $:/tags/Stylesheet
 
 \end
 
-<$list filter="[{$:/layout}match[$:/plugins/BTC/tiddlywiki-multi-columns/ui/Layout]]" variable="ignore">
+<$list filter="[{$:/layout}match[$:/plugins/BTC/tiddlywiki-multi-columns-stripped-down/ui/Layout]]" variable="ignore">
 
 <$list filter="[all[tiddlers]prefix[$:/state/story-river/full-screen/]]" variable="fullScreenTiddler">
 

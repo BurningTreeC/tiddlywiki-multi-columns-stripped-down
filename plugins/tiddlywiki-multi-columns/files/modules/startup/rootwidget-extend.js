@@ -1,5 +1,5 @@
 /*\
-title: $:/plugins/BTC/tiddlywiki-multi-columns/modules/startup/rootwidget-extend.js
+title: $:/plugins/BTC/tiddlywiki-multi-columns-stripped-down/modules/startup/rootwidget-extend.js
 type: application/javascript
 module-type: startup
 

@@ -1,4 +1,4 @@
-title: $:/plugins/BTC/tiddlywiki-multi-columns/CSS/base
+title: $:/plugins/BTC/tiddlywiki-multi-columns-stripped-down/CSS/base
 tags: $:/tags/Stylesheet
 
 \define sticky-titles()
@@ -36,7 +36,7 @@ z-index: `<$text text={{{ [[200]subtract<currentTiddler>] }}}/>`;
 	fill: <<colour foreground>>;
 }
 
-<$list filter="[{$:/layout}match[$:/plugins/BTC/tiddlywiki-multi-columns/ui/Layout]]" variable="ignore">
+<$list filter="[{$:/layout}match[$:/plugins/BTC/tiddlywiki-multi-columns-stripped-down/ui/Layout]]" variable="ignore">
 
 <<set-color-scheme>>
 
@@ -116,7 +116,7 @@ hr.simple {
 
 </$list>
 
-<$list filter="[{$:/layout}!match[$:/plugins/BTC/tiddlywiki-multi-columns/ui/Layout]]" variable="ignore">
+<$list filter="[{$:/layout}!match[$:/plugins/BTC/tiddlywiki-multi-columns-stripped-down/ui/Layout]]" variable="ignore">
 
 html {
 	scroll-behavior: smooth;

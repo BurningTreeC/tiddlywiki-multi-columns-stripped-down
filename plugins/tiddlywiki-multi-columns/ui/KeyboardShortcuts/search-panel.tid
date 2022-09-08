@@ -1,10 +1,10 @@
-title: $:/plugins/BTC/tiddlywiki-multi-columns/ui/KeyboardShortcuts/search-panel
+title: $:/plugins/BTC/tiddlywiki-multi-columns-stripped-down/ui/KeyboardShortcuts/search-panel
 tags: $:/tags/KeyboardShortcut
 key: ((search-panel))
 
-\import $:/plugins/BTC/tiddlywiki-multi-columns/macros/Selectors
+\import $:/plugins/BTC/tiddlywiki-multi-columns-stripped-down/macros/Selectors
 
-<$list filter="[{$:/layout}match[$:/plugins/BTC/tiddlywiki-multi-columns/ui/Layout]]" variable="ignore">
+<$list filter="[{$:/layout}match[$:/plugins/BTC/tiddlywiki-multi-columns-stripped-down/ui/Layout]]" variable="ignore">
 <$list filter="[[$:/state/search-panel]is[missing]]" emptyMessage="""
 <$action-popup/><$action-deletetiddler $tiddler="$:/state/search-panel/search"/>
 <$let currentColumn={{$:/columns!!active-column}} historyList={{{ [[$:/HistoryList-]addsuffix<currentColumn>!match[$:/HistoryList-]!match[$:/HistoryList-1]] ~[[$:/HistoryList]] }}} currentTiddler={{{ [<historyList>get[current-tiddler]] }}}>

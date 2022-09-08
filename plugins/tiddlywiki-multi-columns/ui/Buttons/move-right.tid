@@ -1,4 +1,4 @@
-title: $:/plugins/BTC/tiddlywiki-multi-columns/ui/Buttons/move-right
+title: $:/plugins/BTC/tiddlywiki-multi-columns-stripped-down/ui/Buttons/move-right
 tags: $:/tags/ViewToolbar $:/tags/EditToolbar
 icon: $:/core/icons/right-arrow
 description: move the tiddler to the next column at the right

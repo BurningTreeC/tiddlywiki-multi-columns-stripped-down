@@ -2,7 +2,7 @@ title: $:/core/ui/KeyboardShortcuts/new-tiddler
 tags: $:/tags/KeyboardShortcut
 key: ((new-tiddler))
 
-\import $:/plugins/BTC/tiddlywiki-multi-columns/macros/Navigation
+\import $:/plugins/BTC/tiddlywiki-multi-columns-stripped-down/macros/Navigation
 
 \define not-multi-column-layout-message()
 <$list filter="[all[tiddlers]prefix[$:/state/story-river/full-screen/]] +[limit[1]]" variable="ignore" emptyMessage="""

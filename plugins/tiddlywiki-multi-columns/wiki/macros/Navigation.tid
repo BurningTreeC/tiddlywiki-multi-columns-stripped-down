@@ -1,4 +1,4 @@
-title: $:/plugins/BTC/tiddlywiki-multi-columns/macros/Navigation
+title: $:/plugins/BTC/tiddlywiki-multi-columns-stripped-down/macros/Navigation
 tags: $:/tags/Macro
 
 \define btc-multi-column-keyboard-navigation-inner()

@@ -1,4 +1,4 @@
-title: $:/plugins/BTC/tiddlywiki-multi-columns/ui/Panel/Search
+title: $:/plugins/BTC/tiddlywiki-multi-columns-stripped-down/ui/Panel/Search
 tags: $:/tags/MultiColumn/Panel
 
 \define search-panel-link-actions()

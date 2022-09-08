@@ -1,4 +1,4 @@
-title: $:/plugins/BTC/tiddlywiki-multi-columns/ui/FlexGrowNotification
+title: $:/plugins/BTC/tiddlywiki-multi-columns-stripped-down/ui/FlexGrowNotification
 
 Column: <<column>><br>
 Flex-Grow: <<flexGrow>> <$button class="tc-btn-invisible" actions="""<$action-deletefield $tiddler="$:/columns" $field=<<flexGrowField>>/>""">{{$:/core/images/delete-button}}</$button>

@@ -1,4 +1,4 @@
-title: $:/plugins/BTC/tiddlywiki-multi-columns/macros/DragnDrop
+title: $:/plugins/BTC/tiddlywiki-multi-columns-stripped-down/macros/DragnDrop
 tags: $:/tags/Macro
 
 \define btc-top-drop-actions()

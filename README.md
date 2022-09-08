@@ -1,1 +1,1 @@
-# tiddlywiki-multi-columns
+# tiddlywiki-multi-columns-stripped-down
